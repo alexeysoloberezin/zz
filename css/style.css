@@ -1,0 +1,124 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #5CB15B;
+}
+
+.wrapper-login {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #5CB15B;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url(../img/bg1.png), url(../img/bg2.png), url(../img/bg3.png), url(../img/bg4.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%, 100% 50%, 0% 50%, 0% 50%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.window-login {
+  border-radius: 5px;
+  width: 478px;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+.window-login__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window-login__logo {
+  display: flex;
+  width: 340px;
+  height: 128px;
+  margin-top: 50px;
+}
+.window-login__text {
+  font-weight: 700;
+  font-size: 36px;
+  color: #009846;
+}
+.window-login__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.window-login__inp {
+  border: 1px solid #A6A6A6;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 50px;
+  padding-left: 22px;
+  width: 294px;
+  margin: 10px 0;
+}
+.window-login__btn {
+  background: #009846;
+  width: 294px;
+  border-radius: 5px;
+  height: 50px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 105px;
+}
+.window-login__btn:hover {
+  background: #007d3a;
+}
+
+@media (max-width: 700px) {
+  .window-login {
+    width: 420px;
+    margin: 10px 0;
+  }
+  .window-login__logo {
+    margin-top: 10px;
+  }
+  .window-login__form {
+    margin-top: 10px;
+  }
+  .window-login__btn {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 545px) {
+  .window-login {
+    background: none;
+  }
+  .window-login__text {
+    color: #fff;
+    margin-top: 0;
+  }
+
+  .wrapper-login {
+    background-image: none;
+  }
+}
+@media (max-width: 340px) {
+  .wrapper-login {
+    min-width: 340px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
